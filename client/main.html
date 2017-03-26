@@ -4,5 +4,14 @@
 </head>
 
 <body>
-
+  {{> searchBox}}
 </body>
+
+<template name="searchBox">
+  {{> EasySearch.Input index=restaurantsIndex }}
+  <ul>
+    {{#EasySearch.Each index=restaurantsIndex }}
+      <li>Name of the restaurant: {{restaurantName}}</li>
+    {{/EasySearch.Each}}
+  </ul>
+</template>

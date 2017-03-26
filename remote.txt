@@ -1,0 +1,1 @@
+Change to remote database: set MONGO_URL=mongodb://celebrationtime-meteor:celebrateandparty@ds137540.mlab.com:37540/celebrationtime
