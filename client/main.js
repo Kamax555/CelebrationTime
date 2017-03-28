@@ -1,6 +1,1 @@
-import { Template } from 'meteor/templating';
-import './main.html';
-
-Template.searchBox.helpers({
-  restaurantsIndex: () => RestaurantsIndex,
-});
+import '../imports/ui/first_page/first_page.js';

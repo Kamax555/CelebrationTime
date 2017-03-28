@@ -1,23 +1,5 @@
 <head>
   <title>Celebration time</title>
-  <h1>Welcome to Celebration Time. Please search for a restaurant and reserve.
 </head>
 
-<body>
-  {{> searchBox}}
-</body>
 
-<template name="searchBox">
-  {{> EasySearch.Input index=restaurantsIndex}}
-
-    {{#EasySearch.Each index=restaurantsIndex}}
-    <br><br>
-      {{restaurantName}}
-    {{/EasySearch.Each}}
-
-  {{> EasySearch.LoadMore index=restaurantsIndex}}
-
-  {{#EasySearch.IfNoResults index=restaurantsIndex}}
-    <div class="no-results">No results found!</div>
-  {{/EasySearch.IfNoResults}}
-</template>

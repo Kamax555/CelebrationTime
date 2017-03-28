@@ -1,0 +1,12 @@
+<template name="searchBox">
+  {{> EasySearch.Input index=restaurantsIndex}}
+
+    {{#EasySearch.Each index=restaurantsIndex}}
+    <br><br>
+      {{restaurantName}}
+    {{/EasySearch.Each}}
+
+  {{#EasySearch.IfNoResults index=restaurantsIndex}}
+    <div class="no-results">No results found!</div>
+  {{/EasySearch.IfNoResults}}
+</template>
