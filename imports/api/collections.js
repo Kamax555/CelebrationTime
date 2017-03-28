@@ -4,6 +4,6 @@ Restaurants = new Mongo.Collection('restaurants');
 
 RestaurantsIndex = new EasySearch.Index({
   collection: Restaurants,
-  fields: ['restaurantName'],
+  fields: ['restaurantName', 'restaurantLocation', 'price', 'cuisine'],
   engine: new EasySearch.MongoDB()
 });
