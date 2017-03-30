@@ -1,5 +1,5 @@
 <template name="searchBox">
-  {{> EasySearch.Input index=restaurantsIndex}}
+  {{> EasySearch.Input index=restaurantsIndex noDocumentsOnEmpty=true timeout=700}}
 
     {{#EasySearch.Each index=restaurantsIndex}}
     <br><br>
