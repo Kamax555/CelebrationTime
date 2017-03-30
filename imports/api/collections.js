@@ -1,4 +1,4 @@
-import{ Mong } from 'meteor/mongo'; 
+import{ Mong } from 'meteor/mongo';
 
 Restaurants = new Mongo.Collection('restaurants');
 

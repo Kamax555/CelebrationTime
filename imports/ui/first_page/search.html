@@ -3,7 +3,7 @@
 
     {{#EasySearch.Each index=restaurantsIndex}}
     <br><br>
-      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#{{restaurantName}}">{{restaurantName}}</button>
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#{{id}}">{{restaurantName}}</button>
     {{/EasySearch.Each}}
 
   {{#EasySearch.IfNoResults index=restaurantsIndex}}
