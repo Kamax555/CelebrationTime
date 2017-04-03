@@ -1,4 +1,9 @@
 <template name="searchBox">
+	<form class="searchForm">
+	<div><input type="radio" class="search" name="searchBy" value="all">All</div>
+	<div><input type="radio" class="search" name="searchBy" value="restaurantLocation">location</div>
+	<div><input type="submit" name="search"></div>
+	</form>
   {{> EasySearch.Input index=restaurantsIndex noDocumentsOnEmpty=true timeout=700}}
 
     {{#EasySearch.Each index=restaurantsIndex}}
