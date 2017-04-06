@@ -16,10 +16,3 @@ import './restaurants/ravintola_uleaborg.html'
 import './restaurants/sokeri_jussin_kievari.html'
 import './restaurants/viking_restaurant_harald.html'
 import './restaurants/restaurant_hugo.html'
-
-
-Template.sauraha.helpers({
-  'restaurant': function(){
-    return Restaurants.findOne({'id':'2'});
-  }
-});
