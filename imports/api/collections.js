@@ -1,6 +1,6 @@
-import{ Mong } from 'meteor/mongo';
+import{ Mongo } from 'meteor/mongo';
 
-Restaurants = new Mongo.Collection('restaurants');
+export const Restaurants = new Mongo.Collection('restaurants');
 
 RestaurantsIndex = new EasySearch.Index({
   collection: Restaurants,
