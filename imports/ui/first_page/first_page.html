@@ -22,11 +22,15 @@
                         <a href="#portfolio">Restaurants</a>
                     </li>
                     <li class="page-scroll">
+                        <a href="#create">Create a poll!</a>
+                    </li>
+                    <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
                     </li>
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -154,6 +158,21 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="create">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                {{ >pollForm }}
+            </div>
+        </div>
+    </div>
+        <div class="polls">
+        {{ #each polls }}
+            {{ >poll }}
+        {{ /each }}
+    </div>
     </section>
 
     <!-- Contact Section -->

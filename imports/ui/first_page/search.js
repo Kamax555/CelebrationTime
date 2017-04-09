@@ -16,8 +16,8 @@ if (Meteor.isClient) {
    Template.searchBox.events({
       'submit .searchForm': function(event, Template){
          event.preventDefault();
-         var inputValue = event.target.searchBy.value;
-         console.log(inputValue);
+         var fields = event.target.searchBy.value;
+         console.log(fields);
 
          
       }
