@@ -1,7 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 
-
 import{ Restaurants } from '../../api/collections.js';
 
 import './search.js';
@@ -17,3 +16,7 @@ import './restaurants/sokeri_jussin_kievari.html'
 import './restaurants/viking_restaurant_harald.html'
 import './restaurants/restaurant_hugo.html'
 import './restaurants.js'
+import './poll-form.js'
+import './poll-form.html'
+import './poll.js'
+import './poll.html'

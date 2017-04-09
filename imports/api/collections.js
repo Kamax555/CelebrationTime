@@ -7,3 +7,5 @@ RestaurantsIndex = new EasySearch.Index({
   fields: ['restaurantName', 'restaurantLocation', 'price', 'cuisine'],
   engine: new EasySearch.MongoDB()
 });
+
+Polls = new Mongo.Collection('polls');
