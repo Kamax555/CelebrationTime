@@ -7,8 +7,12 @@ import './search.html';
 
 Template.searchBox.helpers(
 {
-     restaurantsIndex: () => RestaurantsIndex
+     restaurantsIndex: () => RestaurantsIndex,
 
+
+	inputAttributes: function () {
+  	return { class: 'form-control', name: 'search' , placeholder: 'Search a restaurant!'}
+  	}
 });
 
 if (Meteor.isClient) {

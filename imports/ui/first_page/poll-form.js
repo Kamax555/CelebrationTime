@@ -2,6 +2,7 @@ import { Meteor} from 'meteor/meteor';
 import { Template} from 'meteor/templating';
 
 import './poll-form.html';
+import './search.js'
 
 Template.pollForm.events({
 
@@ -15,9 +16,7 @@ Template.pollForm.events({
     var newPoll = {
       question: event.target.question.value,
       choices: [
-        {  text: event.target.choice1.value, votes: 0 },
-        {  text: event.target.choice2.value, votes: 0 },
-        {  text: event.target.choice3.value, votes: 0 }
+        {  text: event.target.choice1.value +" "+ event.target.search.value +" "+ event.target.menu1.value, votes: 0 }
       ]
     };    
      
