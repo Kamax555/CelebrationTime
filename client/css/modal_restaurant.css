@@ -30,4 +30,10 @@
     z-index: 1;
     background: rgba(0,0,0,.5);
 }
-
+.modal-body.viking>.row>.col-md-3{
+    text-align: center;
+}
+.row.des{
+    padding: 5%;
+    line-height: 22px;
+}
