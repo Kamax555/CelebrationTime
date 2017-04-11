@@ -1,13 +1,31 @@
 <template name="vikingRestaurantHarald">
   <div class="modal fade" id="1" role="dialog">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
 
-        <div class="modal-content">
-          <div class="modal-header">
+        <div class="modal-content viking">
+          <div class="modal-header viking">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">{{viking.restaurantName}}</h4>
+              <div class="cover"></div>
+              <h4 class="modal-title">{{viking.restaurantName}}</h4>
           </div>
-          <div class="modal-body">
+          <div class="modal-body viking">
+               <div class="row">
+                  <div class="col-md-6">
+                  <img src="img/icon-cuisine.jpg" class="icon" style="width:40px">
+                  <div class="category">Cuisine</div>
+                <div class="value">Finnish</div>
+                </div>
+                  <div class="col-md-6">
+                  <img src="img/icon-cuisine.jpg" class="icon" style="width:40px">
+                  <div class="category">Cuisine</div>
+                <div class="value">Finnish</div>
+                </div>
+               
+              </div>
+            <div class="part2" style="overflow:hidden">
+              <img src="img/location.PNG" >
+              </div>
+            
             <p>{{viking.restaurantLocation}}</p>
           </div>
           <div class="modal-footer">
