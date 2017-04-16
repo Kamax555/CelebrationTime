@@ -4,6 +4,8 @@ import { Template } from 'meteor/templating';
 
 import{ Restaurants } from '../../api/collections.js';
 
+
+
 import './search.js';
 import './search.html'
 import './first_page.html';
