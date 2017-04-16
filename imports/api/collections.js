@@ -9,3 +9,4 @@ RestaurantsIndex = new EasySearch.Index({
 });
 
 Polls = new Mongo.Collection('polls');
+

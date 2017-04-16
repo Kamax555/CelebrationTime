@@ -5,14 +5,12 @@ import './search.html';
 
 
 
-Template.searchBox.helpers(
-{
+Template.searchBox.helpers({
      restaurantsIndex: () => RestaurantsIndex,
 
-
 	inputAttributes: function () {
-  	return { class: 'form-control', name: 'search' , placeholder: 'Search a restaurant!'}
-  	}
+  	return { class: 'form-control', id:'search', name: 'search' , placeholder: 'Search a restaurant!', required: 'required' }
+  }
 });
 
 if (Meteor.isClient) {

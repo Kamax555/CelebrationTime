@@ -5,6 +5,7 @@ import { Template } from 'meteor/templating';
 import{ Restaurants } from '../../api/collections.js';
 
 import './search.js';
+import './search.html'
 import './first_page.html';
 import './restaurants/sauraha.html';
 import './restaurants/grill_it_oulu.html'
@@ -16,6 +17,8 @@ import './restaurants/ravintola_uleaborg.html'
 import './restaurants/sokeri_jussin_kievari.html'
 import './restaurants/viking_restaurant_harald.html'
 import './restaurants/restaurant_hugo.html'
+import './poll-form.js'
+import './poll-form.html'
 
 Template.sauraha.helpers({
   'sauraha': function(){
