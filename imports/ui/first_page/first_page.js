@@ -1,7 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
-
 import{ Restaurants } from '../../api/collections.js';
+import { Accounts } from 'meteor/accounts-base';
 
 import './search.js';
 import './first_page.html';
@@ -20,3 +20,7 @@ import './poll-form.js'
 import './poll-form.html'
 import './poll.js'
 import './poll.html'
+
+Accounts.ui.config({
+  passwordSignupFields: 'USERNAME_ONLY',
+});
