@@ -23,5 +23,5 @@ easy:search
 twbs:bootstrap
 fortawesome:fontawesome
 jquery
-accounts-ui
 accounts-password
+useraccounts:bootstrap
