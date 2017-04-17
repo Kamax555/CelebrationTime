@@ -11,6 +11,8 @@ Template.searchBox.helpers({
 	inputAttributes: function () {
   	return { class: 'form-control', id:'search', name: 'search' , placeholder: 'Search a restaurant!', required: 'required' }
   }
+
+  
 });
 
 if (Meteor.isClient) {
