@@ -1,4 +1,4 @@
-.modal-header.viking{
+.modal-header.modals.id1{
     background-image: url('img/viking.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,7 +7,90 @@
     position: relative;
     
 }
-.modal-header.viking>.modal-title{
+.modal-header.modals.id2{
+    background-image: url('img/sauraha.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: block;
+    position: relative;
+    
+}
+.modal-header.modals.id3{
+    background-image: url('img/hugo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: block;
+    position: relative;
+    
+}
+.modal-header.modals.id4{
+    background-image: url('img/puistola.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: block;
+    position: relative;
+    
+}
+
+.modal-header.modals.id5{
+    background-image: url('img/sokeri.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: block;
+    position: relative;
+    
+}
+
+.modal-header.modals.id6{
+    background-image: url('img/kauppuri.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: block;
+    position: relative;
+    
+}
+.modal-header.modals.id7{
+    background-image: url('img/uleaborg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: block;
+    position: relative;
+    
+}
+.modal-header.modals.id8{
+    background-image: url('img/pancake.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: block;
+    position: relative;
+    
+}
+.modal-header.modals.id9{
+    background-image: url('img/kathmandu.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: block;
+    position: relative;
+    
+}
+.modal-header.modals.id10{
+    background-image: url('img/grill.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: block;
+    position: relative;
+    
+}
+.modal-header.modals>.modal-title{
     position: absolute;
     top: 50%;
     text-align: center;
@@ -16,12 +99,12 @@
     z-index: 2;
 
 }
-.modal-header.viking > .close{
+.modal-header.modals >.close{
     color: white;
     position: relative;
     z-index: 2;
 }
-.modal-header.viking>.cover{
+.modal-header.modals>.cover{
     position: absolute;
     top: 0;
     left: 0;
@@ -30,10 +113,11 @@
     z-index: 1;
     background: rgba(0,0,0,.5);
 }
-.modal-body.viking>.row>.col-md-3{
+.modal-body.modals>.row>.col-md-3{
     text-align: center;
 }
 .row.des{
     padding: 5%;
     line-height: 22px;
 }
+
