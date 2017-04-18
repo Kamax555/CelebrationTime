@@ -120,4 +120,19 @@
     padding: 5%;
     line-height: 22px;
 }
+.accounts-dialog{
 
+    background-color: #2C3E50;
+}
+#login-dropdown-list{
+    top:200%;
+    left:-185%;
+}
+#login-username-label,#login-password-label{
+    color:white;
+}
+@media only screen and (max-width:500px){
+    #login-dropdown-list{
+        left:0;
+    }
+}
