@@ -9,7 +9,7 @@ Template.searchBox.helpers({
      restaurantsIndex: () => RestaurantsIndex,
 
 	inputAttributes: function () {
-  	return { class: 'form-control', id:'search', name: 'search' , placeholder: 'Search a restaurant!', required: 'required' }
+  	return { class: 'form-control', type:'text', id:'search', name: 'search' , placeholder: 'Search a restaurant!', required: 'required' }
   }
 
   
