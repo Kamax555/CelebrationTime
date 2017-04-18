@@ -21,6 +21,7 @@ import './poll-form.html'
 import './poll.js'
 import './poll.html'
 
+
 Accounts.ui.config({
   passwordSignupFields: 'USERNAME_ONLY',
 });

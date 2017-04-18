@@ -22,6 +22,7 @@ import './restaurants/restaurant_hugo.html'
 import './poll-form.js'
 import './poll-form.html'
 
+
 Template.sauraha.helpers({
   'sauraha': function(){
     return Restaurants.findOne({'id':'2'});
@@ -33,6 +34,20 @@ Template.vikingRestaurantHarald.helpers({
     return Restaurants.findOne({'id':'1'});
   }
 });
+
+Template.vikingRestaurantHarald.events({
+  'click #createPolls': function(event){
+    console.log(Restaurants.findOne({'id':'1'}).restaurantName)
+    var x = Restaurants.findOne({'id':'1'}).restaurantName;
+    x = document.getElementById("search").value;
+  },
+
+  'click #close': function(event){
+    event.preventDefault();
+  }
+});
+
+
 
 Template.restaurantHugo.helpers({
   'hugo': function(){

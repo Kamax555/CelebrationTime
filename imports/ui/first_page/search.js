@@ -1,7 +1,10 @@
 import { Meteor} from 'meteor/meteor';
 import { Template} from 'meteor/templating';
 
+import{ Restaurants } from '../../api/collections.js';
+
 import './search.html';
+import './restaurants.js'
 
 
 
@@ -28,4 +31,5 @@ if (Meteor.isClient) {
    });
 
 }
+
 
