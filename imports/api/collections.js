@@ -1,5 +1,6 @@
 import{ Mongo } from 'meteor/mongo';
 
+import { Email } from 'meteor/email'
 
 export const Restaurants = new Mongo.Collection('restaurants');
 

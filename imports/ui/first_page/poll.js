@@ -27,7 +27,7 @@ Template.poll.events({
       { $inc: action }
     );
 },
-'click .delete'() {
+'click #delete'() {
     Polls.remove(this._id);
   }
 

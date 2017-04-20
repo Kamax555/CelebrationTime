@@ -20,6 +20,8 @@ import './poll-form.js'
 import './poll-form.html'
 import './poll.js'
 import './poll.html'
+import './send-invitation.js'
+import './send-invitation.html'
 
 
 Accounts.ui.config({
