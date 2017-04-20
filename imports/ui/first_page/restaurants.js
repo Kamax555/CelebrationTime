@@ -40,10 +40,6 @@ Template.vikingRestaurantHarald.events({
     console.log(Restaurants.findOne({'id':'1'}).restaurantName)
     var x = Restaurants.findOne({'id':'1'}).restaurantName;
     x = document.getElementById("search").value;
-  },
-
-  'click #close': function(event){
-    event.preventDefault();
   }
 });
 

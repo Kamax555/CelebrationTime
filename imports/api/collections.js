@@ -1,5 +1,6 @@
 import{ Mongo } from 'meteor/mongo';
 
+
 export const Restaurants = new Mongo.Collection('restaurants');
 
 RestaurantsIndex = new EasySearch.Index({
