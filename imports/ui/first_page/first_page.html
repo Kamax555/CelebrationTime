@@ -152,7 +152,6 @@
     </section>
 
     <!-- Poll Section-->
-    {{#if currentUser}}
     <section id="create">
         <div id="pollCreator">
             <div class="container">
@@ -162,24 +161,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-md-offset-3">
-                {{ >invitation }}
-            </div>
-          </div>
-      </section>
-
-      {{else}}
-      <p>Please log in to create a reservation.</p>
-      {{/if}}
             <div class="polls">
             {{ #each polls }}
                 {{ >poll }}
             {{ /each }}
             </div>
             <br>
-
-
-
+            <div class="col-md-6 col-md-offset-3">
+                {{ >invitation }}
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact">
