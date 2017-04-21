@@ -5,6 +5,18 @@ import './poll-form.html';
 import './search.js'
 
 Template.pollForm.events({
+    
+    //using tabs
+    //'click .next' : function(e){
+        
+    //    event.preventDefault();
+      //  test= e.target.
+    //   $(e.target).next('.tab-pane').toggle(500);  },       
+       
+     //   $().removeClass('fade');
+    //    $(this).addClass('active');
+//    },
+       
 
   // handle the form submission
   'submit form': function(event) {
