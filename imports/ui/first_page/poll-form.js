@@ -8,25 +8,15 @@ Template.pollForm.events({
     
     // using tabs next
     'click .next' : function(e){
-        
-     //  event.preventDefault();
-    //    test= e.target.closest("div").next.id;
-      //  console.log(test);
-    //   $(this).removeClass('active');
-       // $(this).closest('div').nextSibling.addClass('active');
     
-    $('.nav-pills > .active').next('li').find('a').trigger('click');
+    $('.nav-tabs > .active').next('li').find('a').trigger('click');
     
     },
-    //   $(e.target).next('.tab-pane').toggle(500);  },       
-       
-     //   $().removeClass('fade');
-    //    $(this).addClass('active');
-//    },
+
        
 // using previous
     'click .previous' : function(e){
-         $('.nav-pills > .active').prev('li').find('a').trigger('click');
+         $('.nav-tabs > .active').prev('li').find('a').trigger('click');
     },
    
     
@@ -49,4 +39,12 @@ Template.pollForm.events({
     Polls.insert(newPoll);
   }
 
+});
+
+//datetimepicker adding
+Template.pollForm.onRendered(function() {
+    this.$('#datetimepicker3').datetimepicker({
+         inline: true,
+          sideBySide: true
+    });
 });
