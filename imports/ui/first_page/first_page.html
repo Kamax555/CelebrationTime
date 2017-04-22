@@ -1,3 +1,4 @@
+<template name="home">
 <body id="page-top" class="index">
 <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
 
@@ -163,7 +164,7 @@
             </div>
             <div class="polls">
             {{ #each polls }}
-                {{ >poll }}
+                   <li><a href="/poll/{{_id}}">{{ question }}</a></li>
             {{ /each }}
             </div>
             <br>
@@ -172,6 +173,9 @@
             </div>
         </div>
     </section>
+
+{{ > pollTest }}
+
 
     <!-- Contact Section -->
     <section id="contact">
@@ -291,3 +295,4 @@
     <!-- Contact Form JavaScript -->
 
 </body>
+</template>

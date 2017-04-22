@@ -4,14 +4,14 @@
     <li><a data-toggle="tab" href="#time">Step2</a></li>
     <li><a data-toggle="tab" href="#create1">Step3</a></li>
   </ul>
-<form class="poll-form tab-content"> 
+<form class="poll-form tab-content">
 
     <div class="form-group question-group tab-pane fade in active" id="question">
         <label>Question</label>
         <input type="text" name="question" class="form-control" placeholder="Your Question">
-        
+
           <label>Choice #1</label>
-       
+
            {{> searchBox}}
            {{> sauraha}}
            {{> grillItOulu}}
@@ -24,16 +24,16 @@
            {{> vikingRestaurantHarald}}
            {{> sokeriJussinKievari}}
         <input type="text" id="menus" name="menu1" class="form-control" value="" placeholder="Select Menu" required="required">
-        
+
           <ul class="pager">
         <li class="next"><a href="#time">Next</a></li>
       </ul>
-     
+
     </div>
     <div class="form-group tab-pane fade datetimepicker" id="time">
-    
+
         <input type="text" name="choice1" class="form-control set-due-date" placeholder="Set Time" id="datetimepicker3" required="required">
-    
+
         <ul class="pager">
           <li class="previous"><a href="#question">Previous</a></li>
           <li class="next"><a href="#create1">Next</a></li>
@@ -41,13 +41,13 @@
     </div>
     <div class="form-group tab-pane fade" id="create1">
       <button type="submit" class="btn btn-lg btn-primary btn-block">Create Poll</button>
-        
+
           <ul class="pager">
          <li class="previous"><a href="#time">Previous</a></li>
       </ul>
     </div>
-    
-     
+
+
 </form>
 
 </template>
