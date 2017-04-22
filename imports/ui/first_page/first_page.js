@@ -36,9 +36,10 @@ Router.route('/', {
 Router.route('/poll/:_id', {
   template: 'pollTest',
   data: function() {
-
+    
     var currentPoll = this.params._id;
-    return Polls.findOne({ '_id': 'currentPoll' });
-console.log( this.params._id)
+    return Polls.findOne({ '_id': currentPoll });
+ 
   }
+    
 });
