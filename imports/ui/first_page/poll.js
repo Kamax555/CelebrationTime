@@ -11,7 +11,7 @@ Template.poll.events({
 
     // prevent the default behavior
     event.preventDefault();
-  
+
     // get the parent (poll) id
     var pollID = $(event.currentTarget).parent('.poll').data('id');
     var voteID = $(event.currentTarget).data('id');
@@ -20,10 +20,10 @@ Template.poll.events({
     var voteString = 'choices.' + voteID + '.votes';
     var action = {};
     action[voteString] = 1;
-    
+
     // increment the number of votes for this choice
     Polls.update(
-      { _id: pollID }, 
+      { _id: pollID },
       { $inc: action }
     );
 },
@@ -34,11 +34,11 @@ Template.poll.events({
 });
 
 Template.body.helpers({
-  
-  polls: function() {
+
+    polls: function() {
     return Polls.find();
   }
-  
+
 });
 
 UI.registerHelper('indexedArray', function(context, options) {
