@@ -3,24 +3,25 @@ import { Template} from 'meteor/templating';
 
 import './poll-form.html';
 import './search.js'
+import './router.js'
 
 Template.pollForm.events({
-    
+
     // using tabs next
     'click .next' : function(e){
-    
+
     $('.nav-tabs > .active').next('li').find('a').trigger('click');
-    
+
     },
 
-       
+
 // using previous
     'click .previous' : function(e){
          $('.nav-tabs > .active').prev('li').find('a').trigger('click');
     },
-   
-    
-    
+
+
+
   // handle the form submission
   'submit form': function(event) {
 
@@ -35,10 +36,13 @@ Template.pollForm.events({
         {  text: event.target.choice2.value +" "+ event.target.search.value +" "+ event.target.menu1.value, votes: 0 },
         {  text: event.target.choice3.value +" "+ event.target.search.value +" "+ event.target.menu1.value, votes: 0 }
       ]
-    };    
-     
+    };
+
     // create the new poll
-    Polls.insert(newPoll);
+    Polls.insert(newPoll, function(err, results){
+      var id = results;
+      Router.go(`/poll/${id}`);
+    });
   }
 
 });
@@ -49,7 +53,7 @@ Template.pollForm.onRendered(function() {
          inline: true,
           sideBySide: true
     }),
-    
+
      this.$('#datetimepicker4').datetimepicker({
          inline: true,
           sideBySide: true,
@@ -60,5 +64,5 @@ Template.pollForm.onRendered(function() {
           sideBySide: true,
          autoclose:true
     });
-    
+
 });

@@ -2,6 +2,7 @@ import { Meteor} from 'meteor/meteor';
 import { Template} from 'meteor/templating';
 
 import './poll.html';
+import './router.js'
 
 // attach events to our poll template
 Template.poll.events({

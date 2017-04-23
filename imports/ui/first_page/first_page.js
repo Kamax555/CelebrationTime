@@ -23,23 +23,9 @@ import './poll.html'
 import './send-invitation.js'
 import './send-invitation.html'
 import './pollTest.html'
+import './router.js'
 
 
 Accounts.ui.config({
   passwordSignupFields: 'USERNAME_ONLY',
-});
-
-Router.route('/', {
-    template: 'home'
-});
-
-Router.route('/poll/:_id', {
-  template: 'pollTest',
-  data: function() {
-    
-    var currentPoll = this.params._id;
-    return Polls.findOne({ '_id': currentPoll });
- 
-  }
-    
 });
