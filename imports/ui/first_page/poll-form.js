@@ -46,19 +46,20 @@ Template.pollForm.events({
 //datetimepicker adding
 Template.pollForm.onRendered(function() {
     this.$('#datetimepicker3').datetimepicker({
-         inline: true,
-          sideBySide: true
+        sideBySide: true
     }),
+        
+     $('#datetimepicker4').datetimepicker({
+       sideBySide: true
+    }),
+     
     
-     this.$('#datetimepicker4').datetimepicker({
-         inline: true,
-          sideBySide: true,
-          autoclose: true
-    }),
-     this.$('#datetimepicker5').datetimepicker({
-         inline: true,
-          sideBySide: true,
-         autoclose:true
+     $('#datetimepicker5').datetimepicker({
+      
+          sideBySide: true    
     });
     
-});
+ });
+
+    
+    
