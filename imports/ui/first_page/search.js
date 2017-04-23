@@ -13,10 +13,30 @@ Template.searchBox.helpers({
 
 	inputAttributes: function () {
   	return { class: 'form-control', type:'text', id:'search', name: 'search' , placeholder: 'Search a restaurant!', required: 'required' }
-  }
+    },
+ 
+       
+ 
+});   
 
+Template.searchBox.events({
+    
+       
+     'change #search' : function(e){
+   
+         $('option').click(function(e){
+             
+           var select=$(e.target).val()
+           console.log(select);
+           $('#search').val(select) 
+             
+         })
+         
+     }
   
-});
+    
+})
+    
 
 if (Meteor.isClient) {
 

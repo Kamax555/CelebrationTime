@@ -131,6 +131,10 @@
 #login-username-label,#login-password-label{
     color:white;
 }
+option:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
 @media only screen and (max-width:500px){
     #login-dropdown-list{
         left:0;
