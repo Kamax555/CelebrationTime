@@ -1,5 +1,5 @@
 import '../imports/api/collections.js';
-
+import '../imports/ui/first_page/router.js';
 
 Meteor.startup(() => {
   // code to run on server at startup
@@ -8,13 +8,15 @@ Meteor.startup(() => {
 });
 
 Meteor.methods({
-  sendInvitation: function(email) {
+  sendInvitation: function(email, currentPoll, user) {
+
+
   	//Sends the e-mail
     Email.send({
       from: "postmaster%40sandboxd84ef69be97a43a1b152ae11e0efb22d.mailgun.org",
       to: email,
-      subject: "Your Invitation!",
-      text: "Hello! Your invitation is attached"
+      subject: "Celebration Time Invitation!",
+      text: "HELLO! USER invited you to celebrate! Find your options here: https://celebrationtime.eu.meteorapp.com" + currentPoll
     });
   }
 });
