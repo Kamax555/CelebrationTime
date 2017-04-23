@@ -31,7 +31,9 @@ Template.pollForm.events({
     var newPoll = {
       question: event.target.question.value,
       choices: [
-        {  text: event.target.choice1.value +" "+ event.target.search.value +" "+ event.target.menu1.value, votes: 0 }
+        {  text: event.target.choice1.value +" "+ event.target.search.value +" "+ event.target.menu1.value, votes: 0 },
+        {  text: event.target.choice2.value +" "+ event.target.search.value +" "+ event.target.menu1.value, votes: 0 },
+        {  text: event.target.choice3.value +" "+ event.target.search.value +" "+ event.target.menu1.value, votes: 0 }
       ]
     };    
      
@@ -46,5 +48,17 @@ Template.pollForm.onRendered(function() {
     this.$('#datetimepicker3').datetimepicker({
          inline: true,
           sideBySide: true
+    }),
+    
+     this.$('#datetimepicker4').datetimepicker({
+         inline: true,
+          sideBySide: true,
+          autoclose: true
+    }),
+     this.$('#datetimepicker5').datetimepicker({
+         inline: true,
+          sideBySide: true,
+         autoclose:true
     });
+    
 });
