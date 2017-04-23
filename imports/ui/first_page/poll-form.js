@@ -50,8 +50,7 @@ Template.pollForm.events({
 //datetimepicker adding
 Template.pollForm.onRendered(function() {
     this.$('#datetimepicker3').datetimepicker({
-         inline: true,
-          sideBySide: true
+        sideBySide: true
     }),
 
      this.$('#datetimepicker4').datetimepicker({
