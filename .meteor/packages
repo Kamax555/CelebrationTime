@@ -23,7 +23,6 @@ easy:search
 twbs:bootstrap
 fortawesome:fontawesome
 aldeed:delete-button
-easysearch:autosuggest
 reactive-dict
 jquery
 accounts-password@1.3.5
@@ -37,3 +36,4 @@ meteorhacks:npm
 npm-container
 tsega:bootstrap3-datetimepicker
 iron:router
+easysearch:autosuggest

@@ -1,0 +1,24 @@
+<template name="searchBox2">
+
+	<!--<form class="searchForm">
+	<div><input type="radio" class="search" name="searchBy" value="all">All</div>
+	<div><input type="radio" class="search" name="searchBy" value="restaurantLocation">location</div>
+	<div><input type="submit" name="search"></div>
+	</form> -->
+
+  {{> EasySearch.Input index=restaurantsIndex attributes=inputAttributes noDocumentsOnEmpty=true timeout=700}}
+    {{#EasySearch.Each index=restaurantsIndex}}
+    <br><br>
+    <button type="button" style="border:none; background-color:white" data-toggle="modal" data-target="#{{id}}">
+    <figure>
+    <img src="{{image}}" class="img-thumbnail" width="150" height="100">
+    <figcaption>{{restaurantName}}</figcaption>
+    </figure>
+    </button>
+    {{/EasySearch.Each}}
+
+
+  {{#EasySearch.IfNoResults index=restaurantsIndex}}
+    <div class="no-results">No restaurants found!</div>
+  {{/EasySearch.IfNoResults}}
+</template>

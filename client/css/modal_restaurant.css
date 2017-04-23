@@ -5,7 +5,7 @@
     height: 400px;
     display: block;
     position: relative;
-    
+
 }
 .modal-header.modals.id2{
     background-image: url('img/sauraha.png');
@@ -14,7 +14,7 @@
     height: 400px;
     display: block;
     position: relative;
-    
+
 }
 .modal-header.modals.id3{
     background-image: url('img/hugo.png');
@@ -23,7 +23,7 @@
     height: 400px;
     display: block;
     position: relative;
-    
+
 }
 .modal-header.modals.id4{
     background-image: url('img/puistola.jpg');
@@ -32,7 +32,7 @@
     height: 400px;
     display: block;
     position: relative;
-    
+
 }
 
 .modal-header.modals.id5{
@@ -42,7 +42,7 @@
     height: 400px;
     display: block;
     position: relative;
-    
+
 }
 
 .modal-header.modals.id6{
@@ -52,7 +52,7 @@
     height: 400px;
     display: block;
     position: relative;
-    
+
 }
 .modal-header.modals.id7{
     background-image: url('img/uleaborg.jpg');
@@ -61,7 +61,7 @@
     height: 400px;
     display: block;
     position: relative;
-    
+
 }
 .modal-header.modals.id8{
     background-image: url('img/pancake.jpg');
@@ -70,7 +70,7 @@
     height: 400px;
     display: block;
     position: relative;
-    
+
 }
 .modal-header.modals.id9{
     background-image: url('img/kathmandu.jpg');
@@ -79,7 +79,7 @@
     height: 400px;
     display: block;
     position: relative;
-    
+
 }
 .modal-header.modals.id10{
     background-image: url('img/grill.jpg');
@@ -88,7 +88,7 @@
     height: 400px;
     display: block;
     position: relative;
-    
+
 }
 .modal-header.modals>.modal-title{
     position: absolute;
@@ -140,4 +140,3 @@ option:hover{
         left:0;
     }
 }
-

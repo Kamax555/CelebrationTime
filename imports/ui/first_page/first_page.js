@@ -24,6 +24,8 @@ import './send-invitation.js'
 import './send-invitation.html'
 import './pollTest.html'
 import './router.js'
+import './search2.html'
+import './search2.js'
 
 
 Accounts.ui.config({

@@ -58,6 +58,7 @@
         </div>
     </header>
 
+ {{ > searchBox2}}
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
@@ -153,6 +154,7 @@
     </section>
 
     <!-- Poll Section-->
+    {{#if currentUser}}
     <section id="create">
         <div id="pollCreator">
             <div class="container">
@@ -169,7 +171,10 @@
             </div>
         </div>
     </section>
-
+    {{else}}
+    <br>
+      <p>Please log in to create a reservation.</p>
+    {{/if}}
 
     <!-- Contact Section -->
     <section id="contact">
