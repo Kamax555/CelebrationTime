@@ -138,6 +138,10 @@ option:hover{
 .line{
     text-align: center;
 }
+#search2{
+    margin: 2% auto;
+    width:80%;
+}
 @media only screen and (max-width:500px){
     #login-dropdown-list{
         left:0;
