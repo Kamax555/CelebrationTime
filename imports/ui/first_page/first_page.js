@@ -31,3 +31,20 @@ import './search2.js'
 Accounts.ui.config({
   passwordSignupFields: 'USERNAME_ONLY',
 });
+
+
+Template.pollTest.events({
+    
+  'click .copy1': function(event) {
+        
+       event.preventDefault();
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($("#link").val()).select();
+        $(".alert.alert-success").show().delay(4000).fadeOut();
+        document.execCommand("copy");
+        $temp.remove();
+        }
+
+    }
+)
