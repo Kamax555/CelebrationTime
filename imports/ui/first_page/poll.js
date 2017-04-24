@@ -30,9 +30,11 @@ Template.poll.events({
 },
 'click #delete'() {
     Polls.remove(this._id);
+    Router.go('/');
     if (! Meteor.userId()) {
       throw new Meteor.Error('not-authorized');
     }
+
   }
 
 });
