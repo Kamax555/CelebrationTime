@@ -4,7 +4,7 @@ import { Template} from 'meteor/templating';
 import './pollTest.html';
 import './router.js'
 import './poll-form.js'
-
+import 'collections.js';
 
 // attach events to our poll template
 Template.poll.events({
@@ -37,6 +37,7 @@ Template.poll.events({
 });
 
 
+
 UI.registerHelper('indexedArray', function(context, options) {
   if (context) {
     return context.map(function(item, index) {
@@ -44,4 +45,5 @@ UI.registerHelper('indexedArray', function(context, options) {
       return item;
     });
   }
+  
 });

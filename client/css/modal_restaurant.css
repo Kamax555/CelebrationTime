@@ -135,6 +135,9 @@ option:hover{
     text-decoration:underline;
     cursor: pointer;
 }
+.line{
+    text-align: center;
+}
 @media only screen and (max-width:500px){
     #login-dropdown-list{
         left:0;
