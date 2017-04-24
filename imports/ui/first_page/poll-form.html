@@ -10,19 +10,10 @@
         <label>Question</label>
         <input type="text" name="question" class="form-control" placeholder="Your Question">
 
-          <label>Choice #1</label>
+          <label>Your Choice</label>
 
            {{> searchBox}}
-           {{> sauraha}}
-           {{> grillItOulu}}
-           {{> kauppuri5}}
-           {{> oulunKathmandu}}
-           {{> pancakeRestaurant}}
-           {{> ravintolaPuistola}}
-           {{> ravintolaUleaborg}}
-           {{> restaurantHugo}}
-           {{> vikingRestaurantHarald}}
-           {{> sokeriJussinKievari}}
+        
         <input type="text" id="menus" name="menu1" class="form-control" value="" placeholder="Select Menu" required="required">
 
           <ul class="pager">
@@ -31,10 +22,11 @@
 
     </div>
     <div class="form-group tab-pane fade datetimepicker" id="time">
-
-        <input type="text" name="choice1" class="form-control set-due-date" placeholder="Set Time" id="datetimepicker3" required="required">
+      
+         <label>Fields with * are compulsory</label>
+        <input type="text" name="choice1" class="form-control set-due-date" placeholder="* Set Time" id="datetimepicker3" required="required">
         
-         <input type="text" name="choice2" class="form-control set-due-date" placeholder="Set Time" id="datetimepicker4" required="required">
+         <input type="text" name="choice2" class="form-control set-due-date" placeholder="* Set Time" id="datetimepicker4" required="required">
         
          <input type="text" name="choice3" class="form-control set-due-date" placeholder="Set Time" id="datetimepicker5">
 
@@ -44,7 +36,7 @@
         </ul>
     </div>
     <div class="form-group tab-pane fade" id="create1">
-      <button type="submit" class="btn btn-lg btn-primary btn-block">Create Poll</button>
+      <button type="submit" class="btn btn-lg btn-primary btn-block" style="margin:5% auto; width:60%">Create Poll</button>
 
           <ul class="pager">
          <li class="previous"><a href="#time">Previous</a></li>
