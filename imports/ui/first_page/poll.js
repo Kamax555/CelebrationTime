@@ -35,8 +35,10 @@ Template.poll.events({
       throw new Meteor.Error('not-authorized');
     }
 
+  },
+'click .reserve'(){
+        alert("Reservation is flying to restaurant!");
   }
-
 });
 
 Template.body.helpers({
