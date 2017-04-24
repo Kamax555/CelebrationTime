@@ -29,14 +29,31 @@ Template.pollForm.events({
     event.preventDefault();
 
     // get the data we need from the form
-    var newPoll = {
-      question: event.target.question.value,
-      choices: [
-        {  text: event.target.choice1.value +" "+ event.target.search.value +" "+ event.target.menu1.value, votes: 0 },
-        {  text: event.target.choice2.value +" "+ event.target.search.value +" "+ event.target.menu1.value, votes: 0 },
-        {  text: event.target.choice3.value +" "+ event.target.search.value +" "+ event.target.menu1.value, votes: 0 }
+      
+      
+      if(event.target.choice3.value===""){
+          
+      var newPoll = {
+          question: event.target.question.value,
+          choices: [
+                    {  text: event.target.choice1.value +" "+ event.target.search.value +" "+ event.target.menu1.value, votes: 0 },
+                    {  text: event.target.choice2.value +" "+ event.target.search.value +" "+ event.target.menu1.value, votes: 0 }
+                   ]
+             }
+          
+          
+      }else{
+          
+     var newPoll = {
+         question: event.target.question.value,
+         choices: [
+                   {  text: event.target.choice1.value +" "+ event.target.search.value +" "+ event.target.menu1.value, votes: 0 },
+                   {  text: event.target.choice2.value +" "+ event.target.search.value +" "+ event.target.menu1.value, votes: 0 },
+                   {  text: event.target.choice3.value +" "+ event.target.search.value +" "+ event.target.menu1.value, votes: 0 }
       ]
     };
+}
+
 
     // create the new poll
     Polls.insert(newPoll, function(err, results){
